@@ -1,0 +1,79 @@
+.content__advertisement {
+    width: 100%;
+    padding: 48px 375px 48px 375px;
+    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    &__wrapper {
+        width: 540px;
+        box-sizing: border-box;
+
+        &__title {
+            display: block;
+            width: 540px;
+            font-family: 'raleway', 'verdana', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 28px;
+            line-height: 1.2;
+            margin: 0 0 8px 0;
+            padding: 0;
+            color: #fff;
+
+            &__first-word {
+                color: #c7b299;
+            }
+        }
+
+        &__txt {
+            display: block;
+            width: 480px;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 1.2;
+            color: #615855;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        align-self: center;
+        width: 170px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'raleway', 'verdana', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 23px;
+        color: #fff;
+        background-color: #998675;
+        box-shadow: inset 0px -3px 0px 0px #736357;
+        border-radius: 5px;
+        margin: 0;
+        transition: color 0.5s,
+            background-color 0.5s,
+            box-shadow 0.5s;
+        padding: 18px 0 18px 0;
+
+        &:hover {
+            color: #998675;
+            background-color: #fff;
+            box-shadow: inset 0px -3px 0px 0px #a2a19e;
+            transition: 0.5s;
+        }
+
+        &:active {
+            color: #fff;
+            background-color: #998675;
+            box-shadow: inset 0px -3px 0px 0px #736357;
+        }
+    }
+}

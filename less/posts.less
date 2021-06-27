@@ -1,0 +1,202 @@
+.content__posts {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px 80px 50px;
+    box-sizing: border-box;
+
+    &__title {
+        width: 200px;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        display: block;
+        font-family: 'raleway', 'verdana', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #555555;
+        box-sizing: border-box;
+    }
+
+    &__txt {
+        max-width: 760px;
+        min-width: 250px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        display: block;
+        font-family: 'montserrat', 'verdana', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #8c8c8c;
+        box-sizing: border-box;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__fig {
+            width: 372px;
+            box-sizing: border-box;
+            background-color: rgba(119, 119, 119, 0.0);
+            border: 1px solid #f8f8f8;
+            transition: background-color 0.2s;
+
+            &__img {
+                display: block;
+                width: 370px;
+                height: 220px;
+            }
+
+            &__caption {
+                width: 100%;
+                padding: 30px;
+                position: relative;
+                box-sizing: border-box;
+                transition: background-color 0.2s;
+
+                &__calendar {
+                    display: block;
+                    width: 50px;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    flex-direction: column;
+                    position: absolute;
+                    top: -200px;
+                    left: 25px;
+                    box-sizing: border-box;
+                    transition: border 0.2s;
+
+                    &__date {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: 'montserrat', 'verdana', sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-size: 24px;
+                        line-height: 20px;
+                        color: #ffffff;
+                        background-color: #363636;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        transition: background-color 0.2s;
+                    }
+
+                    &__month {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: 'roboto', 'verdana', sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #ffffff;
+                        background-color: #252525;
+                        padding: 7px;
+                        box-sizing: border-box;
+                        transition: background-color 0.2s;
+                    }
+                }
+
+                &__title {
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto 20px auto;
+                    text-align: center;
+                    font-family: 'raleway', 'verdana', sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: #555555;
+                    box-sizing: border-box;
+                    transition: color 0.2s;
+                }
+
+                &__txt {
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto 25px auto;
+                    text-align: justify;
+                    font-family: 'montserrat', 'verdana', sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #8c8c8c;
+                    box-sizing: border-box;
+                    transition: color 0.2s;
+                }
+
+                &__link {
+                    display: block;
+                    position: relative;
+                    width: 80px;
+                    text-decoration: none;
+                    font-family: 'montserrat', 'verdana', sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #c7b299;
+                    box-sizing: border-box;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    &:active {
+                        color: #c7b299;
+                    }
+                }
+            }
+
+            &:hover &__img {
+                filter: brightness(50%);
+                transition: 0.2s;
+            }
+
+            &:hover &__caption__calendar {
+                border: 1px solid #fff;
+                border-radius: 5px;
+                transition: 0.2s;
+            }
+
+            &:hover &__caption__calendar__date {
+                background-color: #c7b299;
+                transition: 0.2s;
+            }
+
+            &:hover &__caption__calendar__month {
+                background-color: #a48d72;
+                transition: 0.2s;
+            }
+
+            &:hover {
+                background-color: #362f2d;
+                transition: 0.2s;
+            }
+
+            &:hover &__caption__title {
+                color: #c7b299;
+                transition: 0.2s;
+            }
+
+            &:hover &__caption__txt {
+                color: #fff;
+                transition: 0.2s;
+            }
+        }
+    }
+}

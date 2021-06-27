@@ -1,0 +1,200 @@
+@media(max-width: 576px) {
+
+    .header-page {
+        padding: 20px;
+        width: 100%;
+
+        &__top {
+            width: 100%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+            &__logo {
+                margin: 0 0 0 100px;
+                justify-content: center;
+            }
+
+            &__nav {
+                width: 100%;
+                margin: 0;
+                flex-wrap: wrap;
+                position: relative;
+
+                &__lable {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(../img/menu.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -52px;
+                    left: 390px;
+                }
+
+                &__list {
+                    visibility: hidden;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 0;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+
+                    &__item {
+                        margin: 0;
+                        text-align: center;
+
+                        &__link {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+
+                &__inp:checked~&__list {
+                    visibility: visible;
+                    height: auto;
+                }
+            }
+
+            &__form {
+                display: none;
+            }
+        }
+
+        &__center {
+            display: none;
+        }
+
+        &__bottom {
+            display: none;
+        }
+    }
+
+    .content__dignity {
+        display: none;
+    }
+
+    .content__screenshots {
+        padding: 20px;
+        box-sizing: border-box;
+
+        &__title {
+            max-width: 400px;
+            min-width: 350px;
+            margin: 0 auto 20px auto;
+            box-sizing: border-box;
+        }
+
+        &__txt {
+            max-width: 400px;
+            min-width: 350px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+    }
+
+    .content__advertisement {
+        padding: 20px;
+
+        &__wrapper {
+            max-width: 350px;
+            box-sizing: border-box;
+
+            &__title {
+                max-width: 350px;
+                min-width: 200px;
+            }
+
+            &__txt {
+                max-width: 350px;
+                min-width: 200px;
+            }
+        }
+    }
+
+    .content__cards {
+        padding: 20px;
+    }
+
+    .content__video {
+        display: none;
+    }
+
+    .content__hand-mobile {
+        padding: 20px;
+        background-position: 20px bottom;
+        background-size: 250px;
+
+        &__wrapper {
+            max-width: 400px;
+            min-width: 200px;
+            margin: 0 auto;
+
+            &__title {
+                display: block;
+                text-align: center;
+                margin: 0 0 20px 0;
+            }
+
+            &__txt {
+                margin: 0 0 20px 0;
+            }
+
+            &__list {
+                width: 100%;
+                padding: 0 0 0 180px;
+            }
+        }
+    }
+
+    .content__posts {
+        max-width: 780px;
+        min-width: 350px;
+        padding: 20px;
+        margin: 0 auto;
+
+        &__title {
+            width: 100%;
+            margin: 0 auto 20px auto;
+        }
+
+        &__txt {
+            width: 100%;
+            margin: 0 auto 20px auto;
+        }
+    }
+
+    .page-footer__sponsors {
+        padding: 20px;
+
+        &__list {
+            flex-direction: column;
+
+            &__item {
+                margin: 0 auto 40px auto;
+            }
+        }
+    }
+
+    .page-footer__contact {
+        padding: 20px;
+
+        &__list {
+            width: 100%;
+            flex-direction: column;
+
+            &__item {
+                margin: 0 auto 10px auto;
+            }
+        }
+    }
+}

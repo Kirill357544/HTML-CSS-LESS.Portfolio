@@ -1,0 +1,226 @@
+.content__cards {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 0 80px 0;
+    box-sizing: border-box;
+
+    &__title {
+        display: block;
+        width: 285px;
+        margin: 0 auto 24px auto;
+        text-align: center;
+        font-family: 'raleway', 'verdana', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #555555;
+        box-sizing: border-box;
+    }
+
+    &__txt {
+        display: block;
+        max-width: 780px;
+        min-width: 300px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        font-family: 'montserrat', 'verdana', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #8c8c8c;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+
+        &__item {
+            display: block;
+            padding: 0;
+            margin: 10px 10px 0 0;
+            box-sizing: border-box;
+
+            &__link {
+                display: block;
+                width: 120px;
+                padding: 8px 0 8px 0;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                text-align: center;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #8c8c8c;
+                text-decoration: none;
+                background-color: rgba(17, 17, 17, 0.0);
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                transition: 0.5s;
+                box-sizing: border-box;
+
+                &:hover {
+                    color: #f8f7f6;
+                    background-color: #998675;
+                    transition: 0.5s;
+                }
+
+                &:active {
+                    color: #8c8c8c;
+                    background-color: rgba(17, 17, 17, 0.0);
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        width: 70%;
+        margin: 0 auto 10px auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        &__fig {
+            display: block;
+            width: 370px;
+            margin: 0 10px 30px 10px;
+            padding: 0;
+            position: relative;
+            box-sizing: border-box;
+
+            &__img {
+                display: block;
+                width: 370px;
+                height: 237px;
+                transition: 0.2s;
+                margin: 0 auto 0 auto;
+            }
+
+            &__figcapt {
+                display: block;
+                width: 100%;
+                padding: 27px;
+                background-color: #fbfaf8;
+                transition: 0.2s;
+                box-sizing: border-box;
+
+                &__title {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    font-family: 'raleway', 'verdana', sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: #c7b299;
+                    margin: 0 0 14px 0;
+                    padding: 0;
+                    transition: 0.2s;
+                    box-sizing: border-box;
+                }
+
+                &__txt {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    font-family: 'montserrat', 'verdana', sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #d1d1d1;
+                    margin: 0;
+                    padding: 0;
+                    transition: 0.2s;
+                    box-sizing: border-box;
+                }
+
+                &::before {
+                    transition: 0.2s;
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    top: 200px;
+                    border: 20px solid transparent;
+                    border-bottom: 20px solid #fbfaf8;
+                }
+            }
+
+            &-lowest {
+                margin: 0 10px 30px 10px;
+            }
+
+            &:hover &__img {
+                filter: brightness(50%);
+                transition: 0.2s;
+            }
+
+            &:hover &__figcapt {
+                background-color: #362f2d;
+                transition: 0.2s;
+            }
+
+            &:hover &__figcapt__title {
+                color: #fff;
+                transition: 0.2s;
+            }
+
+            &:hover &__figcapt::before {
+                border-bottom: 20px solid #362f2d;
+                transition: 0.2s;
+            }
+
+            &:hover &__figcapt__txt {
+                color: #c7b299;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    &__link-more {
+        display: block;
+        align-self: center;
+        width: 170px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'raleway', 'verdana', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 23px;
+        color: #fff;
+        background-color: #998675;
+        box-shadow: inset 0px -3px 0px 0px #736357;
+        border-radius: 5px;
+        margin: 0 auto;
+        transition: color 0.5s,
+            background-color 0.5s,
+            box-shadow 0.5s;
+        padding: 18px 0 18px 0;
+
+        &:hover {
+            color: #998675;
+            background-color: #fff;
+            box-shadow: inset 0px -3px 0px 0px #a2a19e;
+            transition: 0.5s;
+        }
+
+        &:active {
+            color: #fff;
+            background-color: #998675;
+            box-shadow: inset 0px -3px 0px 0px #736357;
+        }
+    }
+}

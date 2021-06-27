@@ -1,0 +1,70 @@
+// Dignity mixes
+
+.dignity__wrapper() {
+    width: 270px;
+    margin: 0 35px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &::after {
+        display: block;
+        align-items: flex-end;
+        width: 70px;
+        height: 3px;
+        content: "";
+        margin: 0 auto;
+        background-color: #f1eee9;
+        box-sizing: border-box;
+    }
+
+    &:hover &__icon {
+        color: #c7b299;
+    }
+
+    &:hover &__title {
+        color: #c7b299;
+    }
+
+    &:hover::after {
+        background-color: #c7b299;
+    }
+}
+
+.dignity__icon(@width, @height) {
+    display: block;
+    color: #555555;
+    fill: currentColor;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+}
+
+.dignity__title() {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'raleway', 'verdana', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #555555;
+    margin: 0 0 19px 0;
+    box-sizing: border-box;
+}
+
+.dignity__txt() {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'montserrat', 'verdana', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8c8c8c;
+    margin: 0 0 30px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
